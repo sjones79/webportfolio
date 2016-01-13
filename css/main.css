@@ -244,6 +244,44 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   margin-right: 0px;
 }
 
+/* Skills Tabs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+.skillnav {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px
+}
+.skillnav a {
+	border: none
+}
+
+.skillnav {
+	display: none!important;
+}
+.skilltab-content>.skilltab-pane {
+	padding-top: 15px
+}
+.skillnav-tabs {
+	border-bottom: solid 3px skyblue
+}
+.skillnav-tabs>li {
+	margin: 0px
+}
+.skillnav-tabs>li>a {
+	color: #000
+}
+.skillnav-tabs>li.active>a, .skillnav-tabs>li.active>a:hover, .skillnav-tabs>li.active>a:focus {
+	color: #000;
+	border: none;
+	border-top: solid 3px #000;
+	margin-top: -3px;
+	background-color: transparent
+}
+.skilltab-content {
+	margin-bottom: 30px
+}
+
 /* INFO */
 .info-wrap{
 
