@@ -270,9 +270,14 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   letter-spacing: 2px;
   margin-bottom: .3em;
 }
+.info h3, #header h3{
+    text-transform: uppercase;
+}
 .info h4, #header h4{
   color: #999;
 }
+
+
 /* Contact */
 .main-links{
 
