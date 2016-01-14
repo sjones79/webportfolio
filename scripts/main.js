@@ -15,7 +15,15 @@ $(document).ready( function() {
 	// Hide logo
 	$('#tab-about').click(function() {
 	  $logo.slideUp('slow');
-	});	
+	});
+    
+    $('.skillnav-tabs').on('click', 'li', function() {
+        $('.skillnav-tabs li.active').removeClass('active');
+        $(this).addClass('active');
+        console.log("did i get here");
+    });
+    
+    
 function animMeter(){
     $(".meter > span").each(function() {
                 $(this)
@@ -39,4 +47,10 @@ animMeter();
                     animMeter();
             }
         });
-    });
+    
+    
+    
+    
+    
+    }); //end document ready
+
