@@ -250,24 +250,30 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 	text-transform: uppercase;
 	font-weight: bold;
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 16px
+	font-size: 16px;
+     
 }
 .skillnav a {
 	border: none
 }
 
-.skillnav {
-	display: none!important;
-}
 .skilltab-content>.skilltab-pane {
 	padding-top: 15px
 }
 .skillnav-tabs {
-	border-bottom: solid 3px skyblue
+        list-style-type: none;
+    margin: 0;
+    padding: 0;
+	border-bottom: solid 3px skyblue;
+
 }
+
 .skillnav-tabs>li {
-	margin: 0px
+	margin: 0px;
+    float: left;
+        
 }
+
 .skillnav-tabs>li>a {
 	color: #000
 }
