@@ -265,14 +265,13 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 .skillnav-tabs {
     list-style-type: none;
-	border-bottom: solid 3px skyblue;
-
+	border-bottom: solid 3px #E74C3C;
+    padding-bottom: 30px;
 }
 
 .skillnav-tabs>li {
 	margin: 0px;
     float: left;
-        
 }
 
 .skillnav-tabs>li>a {
