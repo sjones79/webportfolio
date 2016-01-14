@@ -327,9 +327,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
  border-radius: 4px;
  width: 100%;
 }
-.info{
 
-}
 .info h2, #header h2{
   text-transform: uppercase;
   letter-spacing: 2px;
