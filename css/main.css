@@ -289,10 +289,13 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 	margin-bottom: 30px
 }
 
-#mobile, #web, #server {
+#database, #mobile, #web, #server {
     display: none;
 }
 
+#database:target {
+    display: block;
+}
 
 #mobile:target {
     display: block;
