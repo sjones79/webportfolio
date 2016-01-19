@@ -309,10 +309,53 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
     display: block;
 }
 
-/* INFO */
-.info-wrap{
-
+/* Charts */
+h4 + .charts, h4 + .progressbars, h3 + .charts, h3 + .progressbars, h2 + .charts, h2 + .progressbars {
+	margin-top: 15px
 }
+.charts {
+	overflow: hidden;
+}
+.charts + div, .charts + h4, .charts + h3, .charts + h2 {
+	margin-top: 30px
+}
+.charts .chart:last-child {
+	margin-right: 0px
+}
+.chart {
+	float: left;
+	width: auto;
+	margin-right: 30px
+}
+.chart .txt {
+	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 18px
+}
+.chart span {
+	color: #000;
+	font-size: 26px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold
+}
+.easyPieChart {
+	position: relative;
+	text-align: center;
+}
+.easyPieChart canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.chart, .charts .chart:last-child {
+	margin: 0px auto 30px;
+	width: 130px;
+	float: none
+}
+
+
 /* Photo */
 .photo{
   float: left;
