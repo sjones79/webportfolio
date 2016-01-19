@@ -289,7 +289,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 	margin-bottom: 30px
 }
 
-#database, #mobile, #web, #server {
+#database, #mobile, #web, #server, #tools {
     display: none;
 }
 
@@ -306,6 +306,9 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 
 #server:target {
+    display: block;
+}
+#tools:target {
     display: block;
 }
 
