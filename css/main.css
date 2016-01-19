@@ -333,9 +333,12 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 .chart span {
 	font-weight: bold;
 	text-align: center;
-	padding-top: 10px;
 	font-size: 18px;
     display:inline-block;
+}
+
+.chart .txtLabel {
+    padding-top: 15px;
 }
 
 .easyPieChart {
