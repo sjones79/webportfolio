@@ -310,35 +310,32 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 
 /* Charts */
-h4 + .charts, h4 + .progressbars, h3 + .charts, h3 + .progressbars, h2 + .charts, h2 + .progressbars {
+h4 + .charts, h3 + .charts, h2 + .charts {
 	margin-top: 15px
 }
 .charts {
 	overflow: hidden;
+    width: 455px;
+    height: 168px;
 }
 .charts + div, .charts + h4, .charts + h3, .charts + h2 {
-	margin-top: 30px
+	margin-top: 30px;
 }
 .charts .chart:last-child {
-	margin-right: 0px
+	margin-right: 0px;
 }
 .chart {
 	float: left;
 	width: auto;
-	margin-right: 30px
+	margin-right: 30px;
 }
-.chart .txt {
+.chart span {
 	font-weight: bold;
 	text-align: center;
 	padding-top: 10px;
-	font-size: 18px
+	font-size: 18px;
 }
-.chart span {
-	color: #000;
-	font-size: 26px;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-weight: bold
-}
+
 .easyPieChart {
 	position: relative;
 	text-align: center;
@@ -352,7 +349,7 @@ h4 + .charts, h4 + .progressbars, h3 + .charts, h3 + .progressbars, h2 + .charts
 .chart, .charts .chart:last-child {
 	margin: 0px auto 30px;
 	width: 130px;
-	float: none
+	float: none;
 }
 
 
