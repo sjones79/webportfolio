@@ -318,7 +318,7 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 }
 .charts {
 	overflow: hidden;
-    width: 655px;
+    width: 755px;
     height: 168px;
 }
 .charts + div, .charts + h4, .charts + h3, .charts + h2 {
