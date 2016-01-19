@@ -286,7 +286,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 	background-color: transparent
 }
 .skilltab-content {
-	margin-bottom: 30px
+	margin-bottom: 30px;
 }
 
 #database, #mobile, #web, #server, #tools {
@@ -355,7 +355,7 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 }
 
 .chart, .charts .chart:last-child {
-	margin: 0px 5px; 30px;
+	margin: 0px 10px; 30px;
 	width: 130px;
 }
 
