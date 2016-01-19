@@ -20,9 +20,26 @@ $(document).ready( function() {
     $('.skillnav-tabs').on('click', 'li', function() {
         $('.skillnav-tabs li.active').removeClass('active');
         $(this).addClass('active');
-        console.log("did i get here");
     });
     
+    	// Easy Pie chart 
+	//*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    //Initialize Bar color
+	var barChangeColor = "skyblue";
+	var trackChangeColor = "#eeeeee";
+	var initPieChart = function() {    
+		$('.percentage').easyPieChart({
+			barColor: barChangeColor,
+			trackColor: trackChangeColor,
+			scaleColor: false,
+			lineCap: 'butt',
+			lineWidth: 25,
+			animate: 1000,
+			size:130
+		});
+	}
+
+	initPieChart();
     
 function animMeter(){
     $(".meter > span").each(function() {
