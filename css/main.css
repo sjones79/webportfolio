@@ -160,6 +160,9 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   padding-bottom: 1em;
   clear: both;
 }
+.notDisplayed {
+    display: none;
+}
 /* Backgrounds */
 
 .bg-1{
@@ -244,10 +247,119 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   margin-right: 0px;
 }
 
-/* INFO */
-.info-wrap{
-
+/* Skills Tabs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+.skillnav {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+     
 }
+.skillnav a {
+	border: none
+}
+
+.skilltab-content>.skilltab-pane {
+	padding-top: 15px
+}
+.skillnav-tabs {
+    list-style-type: none;
+	border-bottom: solid 3px #E74C3C;
+    padding-bottom: 30px;
+}
+
+.skillnav-tabs>li {
+	margin: 0px;
+    float: left;
+}
+
+.skillnav-tabs>li>a {
+	color: #000;
+    padding: 15px;
+}
+.skillnav-tabs>li.active>a, .skillnav-tabs>li.active>a:hover, .skillnav-tabs>li.active>a:focus {
+	color: #000;
+	border: none;
+	border-top: solid 3px #000;
+	margin-top: -3px;
+	background-color: transparent
+}
+.skilltab-content {
+	margin-bottom: 30px;
+}
+
+#database, #mobile, #web, #server, #tools {
+    display: none;
+}
+
+#database:target {
+    display: block;
+}
+
+#mobile:target {
+    display: block;
+}
+
+#web:target {
+    display: block;
+}
+
+#server:target {
+    display: block;
+}
+#tools:target {
+    display: block;
+}
+
+/* Charts */
+h4 + .charts, h3 + .charts, h2 + .charts {
+	margin-top: 15px
+}
+.charts {
+	overflow: hidden;
+    width: 755px;
+    height: 168px;
+}
+.charts + div, .charts + h4, .charts + h3, .charts + h2 {
+	margin-top: 30px;
+}
+.charts .chart:last-child {
+	margin-right: 0px;
+}
+.chart {
+	float: left;
+	width: auto;
+	margin-right: 30px;
+    text-align: center;
+}
+.chart span {
+	font-weight: bold;
+	text-align: center;
+	font-size: 18px;
+    display:inline-block;
+}
+
+.chart .txtLabel {
+    padding-top: 15px;
+}
+
+.easyPieChart {
+	position: relative;
+	text-align: center;
+}
+.easyPieChart canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.chart, .charts .chart:last-child {
+	margin: 0px 10px; 30px;
+	width: 130px;
+}
+
+
 /* Photo */
 .photo{
   float: left;
@@ -262,17 +374,20 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
  border-radius: 4px;
  width: 100%;
 }
-.info{
 
-}
 .info h2, #header h2{
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: .3em;
 }
+.info h3, #header h3{
+    text-transform: uppercase;
+}
 .info h4, #header h4{
   color: #999;
 }
+
+
 /* Contact */
 .main-links{
 
