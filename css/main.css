@@ -315,7 +315,7 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 }
 .charts {
 	overflow: hidden;
-    width: 455px;
+    width: 655px;
     height: 168px;
 }
 .charts + div, .charts + h4, .charts + h3, .charts + h2 {
@@ -328,12 +328,14 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 	float: left;
 	width: auto;
 	margin-right: 30px;
+    text-align: center;
 }
 .chart span {
 	font-weight: bold;
 	text-align: center;
 	padding-top: 10px;
 	font-size: 18px;
+    display:inline-block;
 }
 
 .easyPieChart {
@@ -347,9 +349,8 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 }
 
 .chart, .charts .chart:last-child {
-	margin: 0px auto 30px;
+	margin: 0px 5px; 30px;
 	width: 130px;
-	float: none;
 }
 
 
