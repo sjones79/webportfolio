@@ -17,9 +17,21 @@ $(document).ready( function() {
 	  $logo.slideUp('slow');
 	});
     
-    $('.skillnav-tabs').on('click', 'li', function() {
+    //show database skills by default
+    $('#tab-skills').click(function() {
+        $('.skillnav-tabs li.active').removeClass('active');
+        $('#dbli').addClass('active');
+        $('#database').show();
+    });
+    
+    $('.skillnav-tabs').on('click', 'li', function(event) {
         $('.skillnav-tabs li.active').removeClass('active');
         $(this).addClass('active');
+        if(event.currentTarget.id != 'dbli') {
+            $('#database').hide();
+        } else {
+             $('#database').show();
+        }
     });
     
     	// Easy Pie chart 
