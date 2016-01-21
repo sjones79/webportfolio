@@ -399,9 +399,10 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 	background: #80a1ff;
 	transition:all linear 0.15s;
 	/* Type */
-	font-size:1.200em;
+	font-size:1.700em;
 	text-shadow:0px 1px 0px #1a1a1a;
 	color:#fff;
+    font-variant: small-caps;
 }
 
 .accordion-section-title.active, .accordion-section-title:hover {
@@ -419,6 +420,12 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 .accordion-section-content {
 	padding:15px;
 	display:none;
+}
+
+.accordion-section-content span {
+    font-size: 26px;
+    color: darkgray;
+    font-weight: 500;
 }
 
 
