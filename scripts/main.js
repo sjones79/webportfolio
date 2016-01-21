@@ -17,9 +17,21 @@ $(document).ready( function() {
 	  $logo.slideUp('slow');
 	});
     
-    $('.skillnav-tabs').on('click', 'li', function() {
+    //show database skills by default
+    $('#tab-skills').click(function() {
+        $('.skillnav-tabs li.active').removeClass('active');
+        $('#dbli').addClass('active');
+        $('#database').show();
+    });
+    
+    $('.skillnav-tabs').on('click', 'li', function(event) {
         $('.skillnav-tabs li.active').removeClass('active');
         $(this).addClass('active');
+        if(event.currentTarget.id != 'dbli') {
+            $('#database').hide();
+        } else {
+             $('#database').show();
+        }
     });
     
     	// Easy Pie chart 
@@ -40,6 +52,30 @@ $(document).ready( function() {
 	}
 
 	initPieChart();
+    
+    // Education Accordion
+    	function close_accordion_section() {
+		$('.accordion .accordion-section-title').removeClass('active');
+		$('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+	}
+
+	$('.accordion-section-title').click(function(e) {
+		// Grab current anchor value
+		var currentAttrValue = $(this).attr('href');
+
+		if($(e.target).is('.active')) {
+			close_accordion_section();
+		}else {
+			close_accordion_section();
+
+			// Add active class to section title
+			$(this).addClass('active');
+			// Open up the hidden content panel
+			$('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+		}
+
+		e.preventDefault();
+	});
     
 function animMeter(){
     $(".meter > span").each(function() {

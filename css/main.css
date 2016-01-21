@@ -359,6 +359,75 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 	width: 130px;
 }
 
+.tech > li {
+    float: left;
+    margin: 0;
+    list-style-type: none;
+    padding-right: 5px;
+}
+
+.tech .skillLabel {
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*----- Accordion -----*/
+.accordion, .accordion * {
+	-webkit-box-sizing:border-box; 
+	-moz-box-sizing:border-box; 
+	box-sizing:border-box;
+}
+
+.accordion {
+	overflow:hidden;
+	box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+	border-radius:3px;
+	background:#f7f7f7;
+}
+
+.accordion a {
+   color: #eaeaea; 
+}
+
+/*----- Accordion Section Titles -----*/
+.accordion-section-title {
+	width:100%;
+	padding:15px;
+	display:inline-block;
+	border-bottom:1px solid #002899;
+	background: #80a1ff;
+	transition:all linear 0.15s;
+	/* Type */
+	font-size:1.700em;
+	text-shadow:0px 1px 0px #1a1a1a;
+	color:#fff;
+    font-variant: small-caps;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+	background:#4d7cff;
+	/* Type */
+	text-decoration:none;
+    color: #eaeaea;
+}
+
+.accordion-section:last-child .accordion-section-title {
+	border-bottom:none;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+	padding:15px;
+	display:none;
+}
+
+.accordion-section-content span {
+    font-size: 26px;
+    color: darkgray;
+    font-weight: 500;
+}
+
 
 /* Photo */
 .photo{

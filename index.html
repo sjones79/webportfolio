@@ -18,6 +18,7 @@
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href = "css/timeline.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
@@ -48,11 +49,11 @@
                    <li class='tab' id="tab-about">
                        <a href="#about"><i class="icon-user"></i><span> About Me</span></a>
                    </li>
-                   <li class='tab'>
-                       <a href="#skills"><i class="icon-envelope"></i><span> Skills</span></a>
+                   <li class='tab' id='tab-skills'>
+                       <a href="#skills"><i class="icon-file"></i><span> Skills</span></a>
                    </li>
                    <li class='tab'>
-                       <a href="#resume"><i class="icon-file-text"></i><span> Resume</span></a>
+                       <a href="#resume"><i class="icon-file-text"></i><span> Experience</span></a>
                    </li>
                    <li class='tab'>
                        <a href="#portfolio"><i class="icon-heart"></i><span> Portfolio</span></a>
@@ -73,7 +74,7 @@
                                <div class="info">
                                    <h3>Schelsea Jones</h3>
                                    <h4>Full Stack Engineer</h4>
-                                    <p>I build web and mobile applications using client and server side technologies. As a highly motivated, self starter who is confident in my ability to produce, I thrive on continuous learning and the challenge of embracing a new skill.</p>
+                                    <p>I build web and mobile applications using client and server side technologies. I am a highly motivated, self starter who enjoys working on challenging issues and creating lasting solutions. Nice to meet you.</p>
                                </div>
                            </div>
                            <div class="g1">
@@ -107,7 +108,7 @@
                                 </div>
                                 <div class="g1">
                                     <div class="item-box clearfix">
-                                        <i class="icon-facebook"></i>
+                                        <i class="icon-linkedin"></i>
                                         <div class="item-data">
                                             <h3><a href="http://fb.me/luthra.sunny">luthra.sunny</a></h3>
                                             <p>Linked In</p>
@@ -116,7 +117,7 @@
                                 </div>
                                 <div class="g1">
                                     <div class="item-box clearfix">
-                                        <i class="icon-twitter"></i>
+                                        <i class="icon-github"></i>
                                         <div class="item-data">
                                             <h3><a href="http://twitter.com/mRovaSolutions">@mRovaSolutions</a></h3>
                                             <p>GitHub</p>
@@ -137,11 +138,11 @@
                                </div>
                                 <!-- Skill tabs and descriptions -->
                                 <ul class="skillnav skillnav-tabs" id="tab-1">
-                                    <li class="active"><a href="#database" data-toggle="tab">Database</a></li>
-                                    <li><a href="#web" data-toggle="tab">Web</a></li>
-                                    <li><a href="#mobile" data-toggle="tab">Mobile</a></li>
-                                    <li><a href="#server" data-toggle="tab">Server</a></li>
-                                    <li><a href="#tools" data-toggle="tab">Frameworks/Tools</a></li>
+                                    <li class="active" id="dbli"><a href="#database" data-toggle="tab">Database</a></li>
+                                    <li id="webli"><a href="#web" data-toggle="tab">Web</a></li>
+                                    <li id="mobileli"><a href="#mobile" data-toggle="tab">Mobile</a></li>
+                                    <li id="serverli"><a href="#server" data-toggle="tab">Server</a></li>
+                                    <li id="toolsli"><a href="#tools" data-toggle="tab">Frameworks/Tools</a></li>
                                 </ul>
                                 <div class="skilltab-content">
                                     <!-- Database Skills -->
@@ -181,7 +182,7 @@
                                                 <span class="txtLabel">JavaScript</span>
                                             </div>
                                             <div class="chart">
-                                                <div class="percentage" data-percent="90"><span>90%</span></div>
+                                                <div class="percentage" data-percent="85"><span>85%</span></div>
                                                 <span class="txtLabel">Zend PHP</span>
                                             </div>
                                             <div class="chart">
@@ -189,7 +190,7 @@
                                                 <span class="txtLabel">Java Spring</span>
                                             </div>
                                             <div class="chart">
-                                                <div class="percentage" data-percent="60"><span>60%</span></div>
+                                                <div class="percentage" data-percent="45"><span>45%</span></div>
                                                 <span class="txtLabel">Ruby on Rails</span>
                                             </div>
                                         </div>
@@ -200,19 +201,19 @@
                                         <h4>Mobile Development</h4>
                                         <div class="charts">
                                             <div class="chart">
-                                                <div class="percentage" data-percent="75"><span>75%</span></div>
+                                                <div class="percentage" data-percent="65"><span>65%</span></div>
                                                 <span class="txtLabel">Objective C</span>
                                             </div>
                                             <div class="chart">
-                                                <div class="percentage" data-percent="80"><span>80%</span></div>
+                                                <div class="percentage" data-percent="70"><span>70%</span></div>
                                                 <span class="txtLabel">Xcode</span>
                                             </div>
                                             <div class="chart">
-                                                <div class="percentage" data-percent="60"><span>60%</span></div>
+                                                <div class="percentage" data-percent="55"><span>55%</span></div>
                                                 <span class="txtLabel">Android</span>
                                             </div>
                                             <div class="chart">
-                                                <div class="percentage" data-percent="65"><span>70%</span></div>
+                                                <div class="percentage" data-percent="70"><span>70%</span></div>
                                                 <span class="txtLabel">Cordova/PhoneGap</span>
                                             </div>
                                         </div>
@@ -220,7 +221,7 @@
                                     <!-- Server -->
                                     <div class="skilltab-pane" id="server">
                                         <p>With an extensive background in Systems Administration, I have strong experience in server-side technologies.</p> 
-                                        <h4>Back End Technologies</h4>
+                                        <h4>Server Technologies</h4>
                                         <div class="charts">
                                             <div class="chart">
                                                 <div class="percentage" data-percent="90"><span>90%</span></div>
@@ -258,7 +259,7 @@
                                                 <span class="txtLabel">Ionic</span>
                                             </div>
                                             <div class="chart">
-                                                <div class="percentage" data-percent="85"><span>83%</span></div>
+                                                <div class="percentage" data-percent="83"><span>83%</span></div>
                                                 <span class="txtLabel">AJAX/JSON</span>
                                             </div>
                                         </div>
@@ -275,7 +276,7 @@
                                             <a href="#portfolio">My Portfolio</a>
                                         </li>
                                         <li>
-                                            <a href="#contact">Hire me for your next project</a>
+                                            <a href="#contact">Contact Me</a>
                                         </li>
                                         <li>
                                             <a href="#features">Features</a>
@@ -316,132 +317,118 @@
                        </section><!-- content -->
                     </div><!-- End Skills Tab Section -->
               
-              <!-- Resume Tab Data -->
-                <div id="resume">
-                    <section class="clearfix">
-                        <div class="g2">
-                            <h3>
-                                Work Experience
-                            </h3>
-                            <ul class="no-list work">
-                                <li>
-                                    <h5>
-                                        Freelance Web Designer
-                                    </h5><span class="label label-info">2009-2010</span>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
-                                    </p>
-                                </li>
-                                <li>
-                                    <h5>
-                                        Python Programmer
-                                    </h5><span class="label label-info">2010-2011</span>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
-                                    </p>
-                                </li>
-                                <li>
-                                    <h5>
-                                        Social Media Lunatic
-                                    </h5><span class="label label-info">2011-2012</span>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
-                                    </p>
-                                </li>
-                                <li>
-                                    <h5>
-                                        Being Awesome
-                                    </h5><span class="label label-danger">2012-Till Death</span>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
-                                    </p>
-                                </li>
-                            </ul>
-                            <h3>
-                                Education
-                            </h3>
-                            <ul class="no-list work">
-                                <li>
-                                    <h5>
-                                        NoUse School
-                                    </h5><span class="label label-success">2001-2002</span>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
-                                    </p>
-                                </li>
-                                <li>
-                                    <h5>
-                                        Super Useless College
-                                    </h5><span class="label label-warning">2002-2008</span>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="g1">
-                            <div class="sidebar">
-                                <h3>
-                                    Skills
-                                </h3>
-                                <h5>
-                                    Software
-                                </h5>
-                                <div class="meter emerald">
-                                    <span style="width: 33.3%"><span>Photoshop</span></span>
-                                </div>
-                                <div class="meter carrot">
-                                    <span style="width: 90%"><span>Illustrator</span></span>
-                                </div>
-                                <div class="meter wisteria">
-                                    <span style="width: 60%"><span>InDesign</span></span>
-                                </div>
-                                <div class="meter sunflower">
-                                    <span style="width: 40%"><span>Firework</span></span>
-                                </div>
-                                <div class="meter midnight">
-                                    <span style="width: 70%"><span>Dreamweaver</span></span>
-                                </div>
-                                <div class="meter pomengrate">
-                                    <span style="width: 60%"><span>Microsoft Office</span></span>
-                                </div>
-                                <div class="meter asbestos">
-                                    <span style="width: 65%"><span>Linux</span></span>
-                                </div>
-                                <div class="break"></div>
-                                <h5>
-                                    Design
-                                </h5>
-                                <div class="meter emerald">
-                                    <span style="width: 33.3%"><span>User Interface</span></span>
-                                </div>
-                                <div class="meter carrot">
-                                    <span style="width: 90%"><span>Typography</span></span>
-                                </div>
-                                <div class="meter wisteria">
-                                    <span style="width: 60%"><span>Web Applications</span></span>
-                                </div>
-                                <div class="break"></div>
-                                <h5>
-                                    Programming Language
-                                </h5>
-                                <div class="meter emerald">
-                                    <span style="width: 53.3%"><span>HTML/CSS</span></span>
-                                </div>
-                                <div class="meter carrot">
-                                    <span style="width: 80%"><span>PHP/MySql</span></span>
-                                </div>
-                                <div class="meter wisteria">
-                                    <span style="width: 95%"><span>jQuery/JavaScript</span></span>
-                                </div>
-                                <div class="meter sunflower">
-                                    <span style="width: 75%"><span>Ruby</span></span>
-                                </div>
-                                <div class="meter asbestos">
-                                    <span style="width: 82%"><span>Python</span></span>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Experience Tab Data -->
+                    <div id="resume">
+                        <h3>Professional Experience</h3>
+                        <a href="http://www.capoeiradetroit.org/jonesbennett/portfolio/resume.pdf" class="btn"><i class="icon-download-alt"></i>&nbsp;Download Resume</a>
+                        <section id="cd-timeline" class="clearfix">
+                            
+                            <div class="cd-timeline-block">
+                                <div class="cd-timeline-img cd-picture">
+                                    <img src="images/cd-icon-picture.svg" alt="Picture">
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>Senior Software Engineer Team Lead</h2>
+                                    <em><small>SilkRoute Global, Troy MI</small></em>
+                                    <ul class="tech">
+                                        <li class="skillLabel"><i class="icon-ok"></i>Objective C</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>AngularJS</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>JQuery</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>MongoDB</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>SQLServer</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>SQLite</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>NGINX</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>Ruby on Rails</li>
+                                    </ul>
+                                    <br>
+                                    <p>SilkRoute Global is a SaaS consulting firm that builds web, mobile and enterprise software solutions for its clients.</p>
+                                    <span class="cd-date">2014 - present</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block">
+                                <div class="cd-timeline-img cd-movie">
+                                    <img src="images/cd-icon-movie.svg" alt="Movie">
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>Software Engineer</h2>
+                                    <em><small>Cambium Learning Group, Ann Arbor MI</small></em>
+                                    <ul class="tech">
+                                        <li class="skillLabel"><i class="icon-ok"></i>PHP</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>Java</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>JavaScript</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>MySQL</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>Apache Web Server</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>Tomcat</li>
+                                    </ul>
+                                    <br>
+                                    <p>Cambium Learning Group is a small but growing K-12 educational software solution company.  They specialize in reading and writing tools created for teachers to use in the classroom.</p>
+                                    <span class="cd-date">2007 - 2014</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block">
+                                <div class="cd-timeline-img cd-picture">
+                                    <img src="images/cd-icon-picture.svg" alt="Picture">
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>Technical Analyst</h2>
+                                    <em><small>ZF North American Operations, Northville MI</small></em>
+                                    <ul class="tech">
+                                        <li class="skillLabel"><i class="icon-ok"></i>RedHat Linux</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>OpenSuSe Linux</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>Bash</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>PHP</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>Perl</li>
+                                    </ul>
+                                    <p>ZF is an automotive driveline and chassis technology company.  They have operations all over the globe.</p>
+                                    <span class="cd-date">2006 - 2007</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block">
+                                <div class="cd-timeline-img cd-location">
+                                    <img src="images/cd-icon-location.svg" alt="Location">
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>Lead Software Engineer</h2>
+                                    <em><small>CADCorporation, Ann Arbor MI</small></em>
+                                    <ul class="tech">
+                                        <li class="skillLabel"><i class="icon-ok"></i>C++</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>Perl</li>
+                                    </ul>
+                                    <p>CADCorporation was a small engineering start up company that specialized in developing virual environments for construction companies.</p>
+                                    <span class="cd-date">2005 - 2006</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+                    </section><!--/.resume section -->
+                    
+                     <!-- Education Section -->
+                    <h3>Education</h3>
+                    <section>
+                        <div class="accordion">
+                            <div class="accordion-section">
+                                <a class="accordion-section-title" href="#accordion-1">University of Michigan, Ann Arbor MI</a>
+                                <div id="accordion-1" class="accordion-section-content">
+                                    <h4>Bachelors of Science</h4>
+                                    <span>Engineering, Performing Arts Technology</span>
+                                    <br><br>
+                                    <p>Completed bachelors degree with a dual concentration in Computer Science &amp; Engineering and Performing Arts Technology.</p>
+                                </div><!--end .accordion-section-content-->
+                            </div><!--end .accordion-section-->
+
+                            <div class="accordion-section">
+                                <a class="accordion-section-title" href="#accordion-2">Washtenaw Community College, Ann Arbor MI</a>
+                                <div id="accordion-2" class="accordion-section-content">
+                                    <h4>Linux&#43; Certification</h4>
+                                    <p>Completed Linux&#43; Certification after pursuing Linux Systems Administration as a hobby.</p>
+                                </div><!--end .accordion-section-content-->
+                            </div><!--end .accordion-section-->
+		              </div><!--end .accordion-->
                     </section>
                 </div>
               <!-- End Resume Tab Data -->
