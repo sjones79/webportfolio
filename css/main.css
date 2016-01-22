@@ -548,6 +548,7 @@ h4 + .charts, h3 + .charts, h2 + .charts {
   position: relative;
   margin: 8px;
   float: left;
+    height: 200px;
 
    -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
