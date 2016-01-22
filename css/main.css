@@ -479,9 +479,6 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 .contact-info{
 
 }
-.contact-info i{
-
-}
 
 /* Icon Styling */
 .contact-info i{
@@ -540,9 +537,16 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 .image{
   position: relative;
 }
+.image ul {
+    list-style-type: none;
+}
 .image img{
-  margin: 0px;
-  width: 100%;
+ float: left;
+  margin: 5px;
+  border: 5px solid #333;
+ -moz-transition: all 0.2s ease-in-out;
+ -webkit-transition: all 0.2s ease-in-out;
+ transition: all 0.2s ease-in-out;
 }
 .image-overlay {
   position: absolute;
