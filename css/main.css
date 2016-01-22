@@ -536,20 +536,106 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 /* Projects */
 .image{
   position: relative;
+  background: url(../images/bg-cover07.jpg) no-repeat fixed center center / cover;
+  padding-top: 90px;
+  padding-bottom: 60px;
 }
-.image ul {
-    list-style-type: none;
-}
-.image img{
- float: left;
+
+.portfolio-item .item-wrap {
+  background: none repeat scroll 0 0 #fff;
+  border: 5px solid #fff;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
   margin: 5px;
-  border: 5px solid #333;
- -moz-transition: all 0.2s ease-in-out;
- -webkit-transition: all 0.2s ease-in-out;
- transition: all 0.2s ease-in-out;
+  float: left;
+
+   -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
-.image-overlay {
-  position: absolute;
+.portfolio-item .item-wrap a {
+   display: block;
+   cursor: pointer;
+}
+
+/* overlay */
+.portfolio-item .item-wrap .overlay {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+	 -moz-opacity: 0;
+	 filter:alpha(opacity=0);
+
+   -webkit-transition: opacity 0.3s ease-in-out;
+	 -moz-transition: opacity 0.3s ease-in-out;
+	 -o-transition: opacity 0.3s ease-in-out;
+	 transition: opacity 0.3s ease-in-out;
+
+   background: #ed5565;
+   background: rgba(237,85,101, .9);
+}
+.portfolio-item .item-wrap .link-icon {
+   display: block;
+   color: #fff;
+   height: 30px;
+   width: 30px;
+   font-size: 18px;
+   line-height: 30px;
+   text-align: center;
+
+   opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+  
+   -webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-left: -15px;
+   margin-top: -15px;
+}
+.portfolio-item .item-wrap img {
+   vertical-align: bottom;
+}
+.portfolio-item .portfolio-item-meta { padding: 18px }
+.portfolio-item .portfolio-item-meta h5 {
+   font: 14px/21px 'Open Sans', sans-serif;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+}
+.portfolio-item .portfolio-item-meta p {
+   font: 12px/18px 'Open Sans', sans-serif;
+   font-weight: 300;
+   color: #efefef;
+   margin-bottom: 0;
+   text-align: center;
+}
+
+/* on hover */
+.portfolio-item:hover .overlay {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+}
+.portfolio-item:hover .link-icon {
+   opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+}
+    
+  /*position: absolute;
   z-index: 5;
   top: 0;
   overflow: hidden;
@@ -566,9 +652,9 @@ h4 + .charts, h3 + .charts, h2 + .charts {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-.image:hover .image-overlay{
+  transform: rotateY(180deg); */
+/*
+.image li:hover .image-overlay {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: rotateY(0deg);
@@ -581,7 +667,10 @@ h4 + .charts, h3 + .charts, h2 + .charts {
   top: 50%;
   display: inline-block;
   margin-top: -20px;
-}
+} */
+
+
+
 /* Icon Box */
 .sny-icon{
   display: block;
