@@ -675,14 +675,20 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 }
 .popup-modal .link-box a {
    color: #fff;
-	font: 11px/21px 'Open Sans', sans-serif;
+   font: 11px/21px 'Open Sans', sans-serif;
    font-weight: 700;
-	text-transform: uppercase;
+   text-transform: uppercase;
    letter-spacing: 3px;
    cursor: pointer;
 }
-.popup-modal a:hover {	color: #00CCCC; }
-.popup-modal a.popup-modal-dismiss { margin-left: 24px; }
+.popup-modal .btn {
+    background: #00CCCC;
+}
+
+.popup-modal a.popup-modal-dismiss { 
+    margin-left: 24px; 
+    background: #ed5565; 
+}
 
 
 /* fadein/fadeout effect for modal popup
@@ -732,6 +738,7 @@ h4 + .charts, h3 + .charts, h2 + .charts {
   padding: 14px 20px;  
   background: #E74C3C;
   color: #fff;
+  border-radius: 10px;
   font-weight: bold;
   font-size: 13px;
   font-family:'Open Sans', sans-serif
@@ -745,8 +752,10 @@ h4 + .charts, h3 + .charts, h2 + .charts {
   transition: all 0.3s;
 }
 .btn:hover{
-  color: #ccc;
+  background: #ff6666;
+  color: #fff;
 }
+
 
 /* Labels */
 .label {
