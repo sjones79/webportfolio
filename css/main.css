@@ -518,7 +518,7 @@ h4 + .charts, h3 + .charts, h2 + .charts {
   color: #999;
 }
 
-/* WorkExperience */
+/* Work Experience */
 .work li{
   border-bottom: 1px solid #f1f1f1;
   margin-bottom: 2em;
@@ -539,15 +539,16 @@ h4 + .charts, h3 + .charts, h2 + .charts {
   background: url(../images/bg-cover07.jpg) no-repeat fixed center center / cover;
   padding-top: 90px;
   padding-bottom: 60px;
+  padding-left: 50px;
 }
 
 .portfolio-item .item-wrap {
   background: none repeat scroll 0 0 #fff;
   border: 5px solid #fff;
-  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   position: relative;
-  margin: 5px;
+  margin: 8px;
   float: left;
 
    -webkit-transition: all 0.3s ease-in-out;
