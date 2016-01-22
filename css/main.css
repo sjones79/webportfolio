@@ -500,9 +500,7 @@ h4 + .charts, h3 + .charts, h2 + .charts {
   float: left;
   margin-right: 12px;
 }
-.item-box i.icon-envelope{
 
-}
 .item-box .item-data{
  margin-top: 6px;
 }
