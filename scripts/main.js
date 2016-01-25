@@ -77,6 +77,28 @@ $(document).ready( function() {
 		e.preventDefault();
 	});
     
+    
+/*----------------------------------------------------*/
+/*	Modal Popup
+------------------------------------------------------*/
+
+    $('.item-wrap a').magnificPopup({
+
+       type:'inline',
+       fixedContentPos: false,
+       removalDelay: 200,
+       showCloseBtn: false,
+       mainClass: 'mfp-fade'
+
+    });
+
+    $(document).on('click', '.popup-modal-dismiss', function (e) {
+        //dismiss the popup by clicking outside the window
+    		e.preventDefault();
+    		$.magnificPopup.close();
+    });
+
+    
 function animMeter(){
     $(".meter > span").each(function() {
                 $(this)
