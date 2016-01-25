@@ -23,8 +23,8 @@ $(function() {
 		.done(function(response) {
             
             //show the thank you view
-            ('#contact').hide();
-            ('#contactthankyou').show();
+            $('#contact').hide();
+            $('#contactthankyou').show();
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
