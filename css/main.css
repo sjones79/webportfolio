@@ -41,7 +41,10 @@ th {text-align: left}
 tr, th, td {padding-right: 1.5em; border-bottom: 0 solid #333}
 
 /* FORMS */
-form {margin: 0}
+form {
+    margin: 0 auto; 
+    width: 459px;
+}
 fieldset {border: 0;padding: 0}
 textarea {overflow: auto; vertical-align: top}
 legend {*margin-left: -.75em}
@@ -52,6 +55,67 @@ input[type="checkbox"], input[type="radio"] {box-sizing: border-box}
 input[type="search"] {-webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box}
 input[type="search"]::-webkit-search-decoration {-webkit-appearance: none}
 button::-moz-focus-inner, input::-moz-focus-inner {border: 0; padding: 0}
+
+input, textarea {
+    width:439px;
+    height:50px;
+    background:#efefef;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+textarea {
+	height:213px;
+}
+
+.contact-header {
+    width:498px;
+	height:64px;
+	background:url("../images/contact-header.jpg");
+	color:#fff;
+    text-transform: uppercase;
+	padding:10px 0px 0px 78px;
+	letter-spacing:1px;
+	font-size:2.2em;
+	float: left;
+    margin-bottom: 50px;
+}
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  margin-left: 150px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  margin-left:  150px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+#form-messages {
+   float: left;
+}
 
 /* QUOTES */
 blockquote, q {quotes: none}
@@ -289,7 +353,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 	margin-bottom: 30px;
 }
 
-#database, #mobile, #web, #server, #tools {
+#database, #mobile, #web, #server, #tools, #contactthankyou {
     display: none;
 }
 
@@ -310,6 +374,10 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 #tools:target {
     display: block;
+}
+
+#contactthankyou:target{
+    display:block;
 }
 
 /* Charts */
@@ -482,10 +550,13 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 
 /* Icon Styling */
 .contact-info i{
-
   color: #333;
   font-size: 46px;
 
+}
+
+.success i {
+    margin: 10px;
 }
 /* Item Box */
 
@@ -759,7 +830,7 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 
 /* Labels */
 .label {
-  display: inline;
+  display: block;
   padding: .25em .6em;
   font-size: 75%;
   font-weight: 500;

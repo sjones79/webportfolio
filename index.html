@@ -29,7 +29,7 @@
       <script>window.html5 || document.write('<script src="js/html5shiv.js"><\/script>')</script>
       <![endif]-->
 </head>
-  <body class="bg-fixed bg-1">
+<body class="bg-fixed bg-1">
 <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
@@ -320,8 +320,10 @@
               
                     <!-- Experience Tab Data -->
                     <div id="resume">
-                        <h3>Professional Experience</h3>
-                        <p>My professional experience includes designing, building, troubleshooting and supporting a variety of mobile and web applications.  In addition to getting down to business in development, I have been the lead engineer on many projects and served as the project manager working directly with customers to translate their needs into solid results.</p>
+                        <div class="info">
+                            <h3>Professional Experience</h3>
+                            <p>I have worked in every aspect of the software development lifecycle from design to support. In addition to getting down to business in development, I have been the lead engineer on many applications and served as the project manager working directly with customers to translate their needs into solid results.</p>
+                        </div>
                         <a href="http://www.capoeiradetroit.org/jonesbennett/portfolio/resume.pdf" class="btn"><i class="icon-download-alt"></i>&nbsp;Download Resume</a>
                         <section id="cd-timeline" class="clearfix">
                             
@@ -563,7 +565,7 @@
                              <div class="description-box">
                                  <h4>MLB Hackathon</h4>
                                  <p>Baseball Pitching Analysis Hackathon project hosted by TruMedia Networks.</p>
-                                 <span class="categories"><i class="icon-tag"></i>Stats &amp; Analysis, D3.js, JavaScript</span>
+                                 <span class="categories"><i class="icon-tag"></i>Stats &amp; Analytics, D3.js, JavaScript</span>
                              </div>
                              <div class="link-box">
                                  <a href="http://www.capoeiradetroit.org/projects/mlb-mvp/" class="btn" target="_blank">View</a>
@@ -576,7 +578,7 @@
                              <div class="description-box">
                                  <h4>Quarterback Passing Trends Project</h4>
                                  <p>MVP web application dashboard of quarterback stats based on provided data.</p>
-                                 <span class="categories"><i class="icon-tag"></i>Stats &amp; Analysis, D3.js, AngularJS</span>
+                                 <span class="categories"><i class="icon-tag"></i>Stats &amp; Analytics, D3.js, AngularJS</span>
                              </div>
                              <div class="link-box">
                                  <a href="http://www.capoeiradetroit.org/projects/qb-passing" class="btn" target="_blank">View</a>
@@ -663,43 +665,40 @@
                          </div><!--Catalog Modal End -->
                     </section>
                 </div>
-              <!-- End Projects Data -->
-              <!-- Contact Tab Data -->
+                <!-- End Projects Data -->
+                <!-- Contact Tab Data -->
                 <div id="contact">
+                    <header class="contact-header">Get In Touch</header>
                     <section class="clearfix">
-                       <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="icon-globe"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>My Address</h4>
-                              <p>Some Apartment 405 in a jungle nearby a restaurant</p>
-                            </div>
-                         </div>
-                       </div>
-                       <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="icon-phone"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>Mobile Number</h4>
-                              <p>999-9999-999<br/>999-1112-999</p>
-                            </div>
-                         </div>
-                       </div>
-                       <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="icon-user"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>About Me</h4>
-                              <p>I love to work, so don't be shy, i am just an email away.</p>
-                            </div>
-                         </div>
-                       </div>
+                        <div id="form-messages"></div>
+                        <form id="ajax-contact" method="post" action="scripts/contact.php">
+                            <fieldset>
+                                <input name="name" placeholder="Name" required>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <input name="email" type="email" placeholder="Email" required>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <textarea name="message" placeholder="Message" required></textarea>
+                            </fieldset>
+
+                            <fieldset>
+                                <label>What is 7 &#43; 2? (Anti-spam)</label>
+                                <input name="human" placeholder="Answer" required>
+                            </fieldset>
+                            <input id="submit" class="btn" name="submit" type="submit" value="SEND MESSAGE">
+
+                        </form>
+                       <div class="break"></div>
+                       
+                    </section>
+                </div>
+                <div id="contactthankyou">
+                    <section class="clearfix">
+                        <p class="success"><i class="icon-thumbs-up-alt"></i>Thank you for contacting me!</p>
+                        
                        <div class="break"></div>
                        
                     </section>
@@ -718,10 +717,11 @@
 
 
 
-<script src="js/jquery.hashchange.min.js"></script>
-<script src="js/jquery.easytabs.min.js"></script>
-<script src="http://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="scripts/main.js"></script>
+      <script src="js/jquery.hashchange.min.js"></script>
+      <script src="js/jquery.easytabs.min.js"></script>
+      <script src="http://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="scripts/main.js"></script>
+      <script src="scripts/mailer.js"></script>
 </body>
 </html>
