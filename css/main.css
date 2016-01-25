@@ -324,7 +324,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 	margin-bottom: 30px;
 }
 
-#database, #mobile, #web, #server, #tools {
+#database, #mobile, #web, #server, #tools, #contactthankyou {
     display: none;
 }
 
@@ -345,6 +345,10 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 #tools:target {
     display: block;
+}
+
+#contactthankyou:target{
+    display:block;
 }
 
 /* Charts */
