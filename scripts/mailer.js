@@ -25,7 +25,7 @@ $(function() {
             //show the thank you view
             $('#contact').hide();
             $('#contactthankyou').show();
-            
+            //clear form fields
             $("#ajax-contact")[0].reset();
 		})
 		.fail(function(data) {
