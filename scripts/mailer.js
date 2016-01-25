@@ -25,6 +25,8 @@ $(function() {
             //show the thank you view
             $('#contact').hide();
             $('#contactthankyou').show();
+            
+            $("#ajax-contact")[0].reset();
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
