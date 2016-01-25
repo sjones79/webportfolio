@@ -21,10 +21,6 @@ $(function() {
 			data: formData
 		})
 		.done(function(response) {
-			// Clear the form.
-			$('#name').val('');
-			$('#email').val('');
-			$('#message').val('');
             
             //show the thank you view
             ('#contact').hide();
