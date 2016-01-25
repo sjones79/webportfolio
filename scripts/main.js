@@ -34,6 +34,10 @@ $(document).ready( function() {
         }
     });
     
+    $('.etabs').on('click', 'li', function(){
+           $('#contactthankyou').hide();        
+        });
+    
     	// Easy Pie chart 
 	//*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
     //Initialize Bar color
