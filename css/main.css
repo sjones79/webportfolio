@@ -550,10 +550,13 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 
 /* Icon Styling */
 .contact-info i{
-
   color: #333;
   font-size: 46px;
 
+}
+
+.success i {
+    margin: 10px;
 }
 /* Item Box */
 
