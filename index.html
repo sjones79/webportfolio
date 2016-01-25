@@ -29,7 +29,7 @@
       <script>window.html5 || document.write('<script src="js/html5shiv.js"><\/script>')</script>
       <![endif]-->
 </head>
-  <body class="bg-fixed bg-1">
+<body class="bg-fixed bg-1">
 <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
@@ -665,13 +665,12 @@
                          </div><!--Catalog Modal End -->
                     </section>
                 </div>
-              <!-- End Projects Data -->
-              <!-- Contact Tab Data -->
+                <!-- End Projects Data -->
+                <!-- Contact Tab Data -->
                 <div id="contact">
                     <header class="contact-header">Get In Touch</header>
                     <section class="clearfix">
-                        <div id="form-messages"></div>
-                        <form method="post" action="scripts/contact.php">
+                        <form id="ajax-contact" method="post" action="scripts/contact.php">
                             <fieldset>
                                 <input name="name" placeholder="Name" required>
                             </fieldset>
@@ -717,10 +716,11 @@
 
 
 
-<script src="js/jquery.hashchange.min.js"></script>
-<script src="js/jquery.easytabs.min.js"></script>
-<script src="http://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="scripts/main.js"></script>
+      <script src="js/jquery.hashchange.min.js"></script>
+      <script src="js/jquery.easytabs.min.js"></script>
+      <script src="http://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="scripts/main.js"></script>
+      <script src="scripts/mailer.js"></script>
 </body>
 </html>
