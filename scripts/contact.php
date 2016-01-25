@@ -26,7 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $errString .= $humanErr;
     }
     
-    if(!empty($errString)){
+    if(!empty($errString)) {
         // Set a 400 (bad request) response code and exit.
         http_response_code(400);
         echo "Oops! There was a problem with your submission. Please complete the form and try again.";
@@ -48,7 +48,7 @@ function cleanData($data){
 
 function sendMail (){
     // Set the recipient email address.
-    $recipient = "info#capoeiradetroit.org";
+    $recipient = "info@capoeiradetroit.org";
 
     // Set the email subject.
     $subject = "Test from profile contact $name";
