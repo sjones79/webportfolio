@@ -230,8 +230,9 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 /* Backgrounds */
 
 .bg-1{
-  background-image: url('http://www.mrova.com/wp-content/uploads/2013/06/floor.jpg');
+    background-image: url('../images/backgrounds/floor.jpg');
 }
+
 
 /* Header */
 #header{
@@ -605,7 +606,7 @@ h4 + .charts, h3 + .charts, h2 + .charts {
 /* Projects */
 .image{
   position: relative;
-  background: url(../images/bg-cover07.jpg) no-repeat fixed center center / cover;
+  background: url(../images/backgrounds/bg-cover07.jpg) no-repeat fixed center center / cover;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 50px;
