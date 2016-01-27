@@ -10,7 +10,7 @@ $errString = "";
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $name = cleanData($_POST['name']);
     if (empty($name) || !preg_match("/^[a-zA-Z ]*$/",$name)) {
-        $errString .= $nameError; 
+        $errString .= $nameErr; 
     }
     
     $emailAddress = cleanData($_POST['email']);
