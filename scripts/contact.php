@@ -31,6 +31,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         http_response_code(400);
         echo "Oops! There was a problem with your submission. Please complete the form and try again.";
         exit;
+    } else {
+        sendMail();
     }
 } else {
         // Not a POST request, set a 403 (forbidden) response code.
