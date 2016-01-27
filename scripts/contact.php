@@ -1,5 +1,4 @@
 <?php
-
 $name = $emailAddress = $message = $human = "";
 $nameErr = "Only letters and white space allowed<br>";
 $emailErr = "Invalid email format<br>";
@@ -10,7 +9,7 @@ $errString = "";
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $name = cleanData($_POST['name']);
     if (empty($name) || !preg_match("/^[a-zA-Z ]*$/",$name)) {
-        $errString .= $nameError; 
+        $errString .= $nameErr; 
     }
     
     $emailAddress = cleanData($_POST['email']);
@@ -31,6 +30,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         http_response_code(400);
         echo "Oops! There was a problem with your submission. Please complete the form and try again.";
         exit;
+    } else {
+        sendMail($name, $emailAddress, $message);
     }
 } else {
         // Not a POST request, set a 403 (forbidden) response code.
@@ -46,12 +47,12 @@ function cleanData($data){
      return $data; 
 }
 
-function sendMail (){
+function sendMail ($name, $emailAddress, $message) {
     // Set the recipient email address.
     $recipient = "info@capoeiradetroit.org";
 
     // Set the email subject.
-    $subject = "Test from profile contact $name";
+    $subject = "Online resume viewed by $name";
 
     // Build the email content.
     $email_content = "Name: $name\n";

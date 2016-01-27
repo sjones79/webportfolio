@@ -34,9 +34,13 @@ $(document).ready( function() {
         }
     });
     
-    $('.etabs').on('click', 'li', function(){
-           $('#contactthankyou').hide();        
-        });
+    $('.etabs').on('click', 'li', function() {
+        $('#contactthankyou').hide();
+        $('#form-messages').removeClass('success');
+        $('#form-messages').removeClass('error');
+        $('#form-messages').empty();
+        
+    });
     
     	// Easy Pie chart 
 	//*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
@@ -69,7 +73,7 @@ $(document).ready( function() {
 
 		if($(e.target).is('.active')) {
 			close_accordion_section();
-		}else {
+		} else {
 			close_accordion_section();
 
 			// Add active class to section title
