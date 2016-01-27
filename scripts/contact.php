@@ -1,5 +1,5 @@
 <?php
-
+ini_set('html_errors', false);
 $name = $emailAddress = $message = $human = "";
 $nameErr = "Only letters and white space allowed<br>";
 $emailErr = "Invalid email format<br>";
