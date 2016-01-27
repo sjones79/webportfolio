@@ -32,7 +32,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         echo "Oops! There was a problem with your submission. Please complete the form and try again.";
         exit;
     } else {
-        sendMail();
+        sendMail($name, $emailAddress, $message);
     }
 } else {
         // Not a POST request, set a 403 (forbidden) response code.
@@ -48,12 +48,12 @@ function cleanData($data){
      return $data; 
 }
 
-function sendMail (){
+function sendMail ($name, $emailAddress, $message) {
     // Set the recipient email address.
     $recipient = "info@capoeiradetroit.org";
 
     // Set the email subject.
-    $subject = "Test from profile contact $name";
+    $subject = "Online resume viewed by $name";
 
     // Build the email content.
     $email_content = "Name: $name\n";
