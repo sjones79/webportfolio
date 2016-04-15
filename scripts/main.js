@@ -1,7 +1,7 @@
 $(document).ready( function() {
 
 	// Logo
-	var $logo 	= $('#logo');
+	var $logo = $('#logo');
 	 if (location.href.indexOf("#") != -1) {
         if(location.href.substr(location.href.indexOf("#"))!='#about'){
         	$logo.show();
