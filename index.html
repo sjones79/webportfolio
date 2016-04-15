@@ -18,361 +18,684 @@
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href = "css/timeline.css">
+  <link rel="stylesheet" href = "css/magnific-popup.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
-  <script src="js/jquery.hashchange.min.js"></script>
-  <script src="js/jquery.easytabs.min.js"></script>
 
-  <script src="scripts/main.js"></script>
   <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <script>window.html5 || document.write('<script src="js/html5shiv.js"><\/script>')</script>
       <![endif]-->
 </head>
-  <body class="bg-fixed bg-1">
+<body class="bg-fixed bg-1">
 <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
    <div class="main-container">
-    <div class="main wrapper clearfix">
-      <!-- Header Start -->
-        <header id="header">
-            <div id="logo">
-                <h2>
-                    Schelsea Jones
-                </h2>
-                <h4>
-                    Full Stack Engineer
-                </h4>
-            </div>
-        </header>
-        <!-- Header End -->
-        <!-- Main Tab Container -->
-        <div id="tab-container" class="tab-container">
-          <!-- Tab List -->
-            <ul class='etabs'>
-                <li class='tab' id="tab-about">
-                  <a href="#about"><i class="icon-user"></i><span> About Me</span></a>
-                </li>
-                <li class='tab'>
-                  <a href="#skils"><i class="icon-envelope"></i><span> Skills</span></a>
-                </li>
-                <li class='tab'>
-                  <a href="#resume"><i class="icon-file-text"></i><span> Resume</span></a>
-                </li>
-                <li class='tab'>
-                  <a href="#portfolio"><i class="icon-heart"></i><span> Portfolio</span></a>
-                </li>
-                <li class='tab'>
-                  <a href="#contact"><i class="icon-envelope"></i><span> Contact</span></a>
-                </li>
-            </ul>
-          <!-- End Tab List -->
-            <div id="tab-data-wrap">
-              <!-- About Tab Data -->
-                <div id="about">
-                    <section class="clearfix">
-                        <div class="g2">
-                            <div class="photo">
-                                <img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-frc1/582546_344156198979857_678123957_n.jpg" alt="Schelsea Jones">
+       <div class="main wrapper clearfix">
+           <!-- Header Start -->
+           <header id="header">
+               <div id="logo">
+                   <h2>Schelsea Jones</h2>
+                   <h4>Software Engineer</h4>
+               </div>
+           </header>
+           <!-- Header End -->
+           <!-- Main Tab Container -->
+           <div id="tab-container" class="tab-container">
+           <!-- Tab List -->
+               <ul class='etabs'>
+                   <li class='tab' id="tab-about">
+                       <a href="#about"><i class="icon-user"></i><span> About Me</span></a>
+                   </li>
+                   <li class='tab' id='tab-skills'>
+                       <a href="#skills"><i class="icon-file"></i><span> Skills</span></a>
+                   </li>
+                   <li class='tab'>
+                       <a href="#resume"><i class="icon-file-text"></i><span> Experience</span></a>
+                   </li>
+                   <li class='tab'>
+                       <a href="#projects"><i class="icon-heart"></i><span> Projects</span></a>
+                   </li>
+                   <li class='tab'>
+                       <a href="#contact"><i class="icon-envelope"></i><span> Contact</span></a>
+                   </li>
+               </ul>
+               <!-- End Tab List -->
+               <div id="tab-data-wrap">
+                   <!-- About Tab Data -->
+                   <div id="about">
+                       <section class="clearfix">
+                           <div class="g2">
+                               <div class="photo">
+                                   <img src="images/self.png" alt="Schelsea Jones">
+                               </div>
+                               <div class="info">
+                                   <h3>Schelsea Jones</h3>
+                                   <h4>Software Engineer</h4>
+                                    <p>I build web and mobile applications using client and server side technologies. I am a highly motivated, self starter who enjoys working on challenging issues and creating lasting solutions. Nice to meet you.</p>
+                               </div>
+                           </div>
+                           <div class="g1">
+                               <div class="main-links sidebar">
+                                    <ul>
+                                        <li>
+                                            <a href="#resume">View My Resume</a>
+                                        </li>
+                                        <li>
+                                            <a href="#projects">My Projects</a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact">Contact Me</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="info">
-                                <h2>
-                                    Schelsea Jones
-                                </h2>
-                                <h4>
-                                    Full Stack Engineer
-                                </h4>
-                                <p>
-                                    We are mRova, a Pune-based software development company. We love to develop Websites, Desktop Softwares and Mobile Applications.
-                                </p>
+                            <div class="break"></div>
+                            <div class="contact-info">
+                                <div class="g1">
+                                    <div class="item-box clearfix">
+                                        <i class="icon-envelope"></i>
+                                        <div class="item-data">
+                                            <h3><a href="mailto:jonessm@umich.edu">jonessm@umich.edu</a></h3>
+                                            <p>Email Address</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="g1">
+                                    <div class="item-box clearfix">
+                                        <i class="icon-linkedin"></i>
+                                        <div class="item-data">
+                                            <h3><a href="https://www.linkedin.com/in/schelseajones">schelsea.jones</a></h3>
+                                            <p>Linked In</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="g1">
+                                    <div class="item-box clearfix">
+                                        <i class="icon-github"></i>
+                                        <div class="item-data">
+                                            <h3><a href="https://github.com/sjones79">sjones79</a></h3>
+                                            <p>GitHub</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="g1">
-                            <div class="main-links sidebar">
-                                <ul>
-                                    <li>
-                                        <a href="#resume">View My Resume</a>
-                                    </li>
-                                    <li>
-                                        <a href="#portfolio">My Portfolio</a>
-                                    </li>
-                                    <li>
-                                        <a href="#contact">Hire me for your next project</a>
-                                    </li>
-                                    <li>
-                                        <a href="#features">Features</a>
-                                    </li>
+                        </section><!-- content -->
+                   </div>
+                   <!-- End About Tab Data -->
+                   <!-- Skills Tab Data -->
+                   <div id="skills">
+                       <section class="clearfix">
+                           <div class="g2">
+                               <div class="info">
+                                   <h3>Technical Skills</h3>
+                                   <p>I am a seasoned Software Engineer with demonstrable skills in a number of front end and back end technologies.</p>
+                               </div>
+                                <!-- Skill tabs and descriptions -->
+                                <ul class="skillnav skillnav-tabs" id="tab-1">
+                                    <li class="active" id="dbli"><a href="#database" data-toggle="tab">Database</a></li>
+                                    <li id="webli"><a href="#web" data-toggle="tab">Web</a></li>
+                                    <li id="mobileli"><a href="#mobile" data-toggle="tab">Mobile</a></li>
+                                    <li id="serverli"><a href="#server" data-toggle="tab">Server</a></li>
+                                    <li id="toolsli"><a href="#tools" data-toggle="tab">Frameworks/Tools</a></li>
                                 </ul>
+                                <div class="skilltab-content">
+                                    <!-- Database Skills -->
+                                    <div class="skilltab-pane active" id="database">
+                                        <p>I have extensive experience designing, coding, testing and supporting next-generation SQL and NoSQL solutions.</p>
+                                        <h4>Database Technologies</h4>
+                                        <div class="charts">
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="80"><span>80%</span></div>
+                                                <span class="txtLabel">MySQL</span>
+                                            </div>
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="65"><span>65%</span></div>
+                                                <span class="txtLabel">MongoDB</span>
+                                            </div>
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="72"><span>72%</span></div>
+                                                <span class="txtLabel">SQLServer</span>
+                                            </div>
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="60"><span>60%</span></div>
+                                                <span class="txtLabel">SQLite</span>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.Database -->
+                                    <!-- Web Skills -->
+                                    <div class="skilltab-pane" id="web">
+                                        <p>I have used a number of client and server side languages to build scalable, robust web applications.</p>
+                                        <h4>Programming Languages</h4>
+                                        <div class="charts">
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="87"><span>87%</span></div>
+                                                <span class="txtLabel">HTML5/CSS3/SASS</span>
+                                            </div>
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="80"><span>80%</span></div>
+                                                <span class="txtLabel">JavaScript</span>
+                                            </div>
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="85"><span>85%</span></div>
+                                                <span class="txtLabel">PHP</span>
+                                            </div>
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="65"><span>65%</span></div>
+                                                <span class="txtLabel">Java</span>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.Web -->
+                                    <!-- Mobile -->
+                                    <div class="skilltab-pane" id="mobile">
+                                        <p>I have built, published, and supported a number of native and hybrid mobile apps.</p> 
+                                        <h4>Mobile Development</h4>
+                                        <div class="charts">
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="65"><span>65%</span></div>
+                                                <span class="txtLabel">Objective C</span>
+                                            </div>
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="70"><span>70%</span></div>
+                                                <span class="txtLabel">Xcode</span>
+                                            </div>
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="55"><span>55%</span></div>
+                                                <span class="txtLabel">Android</span>
+                                            </div>
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="70"><span>70%</span></div>
+                                                <span class="txtLabel">Cordova/PhoneGap</span>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.Mobile -->
+                                    <!-- Server -->
+                                    <div class="skilltab-pane" id="server">
+                                        <p>With an extensive background in Systems Administration, I have strong experience in server-side technologies.</p> 
+                                        <h4>Server Technologies</h4>
+                                        <div class="charts">
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="87"><span>87%</span></div>
+                                                <span class="txtLabel">Apache</span>
+                                            </div>
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="70"><span>70%</span></div>
+                                                <span class="txtLabel">Tomcat</span>
+                                            </div>
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="60"><span>60%</span></div>
+                                                <span class="txtLabel">NGINX</span>
+                                            </div>
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="40"><span>40%</span></div>
+                                                <span class="txtLabel">AWS</span>
+                                            </div>
+                                        </div>
+                                    </div><!--/.Server -->
+                                    <!--Tools -->
+                                    <div class="skilltab-pane" id="tools">
+                                        <p>I am energetic person and quick learner.  Here are a few of the frameworks and tools I have used.</p>
+                                        <h4>Frameworks/Tools</h4>
+                                        <div class="charts">
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="87"><span>87%</span></div>
+                                                <span class="txtLabel">AngularJS</span>
+                                            </div>
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="70"><span>70%</span></div>
+                                                <span class="txtLabel">JQuery</span>
+                                            </div>
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="83"><span>83%</span></div>
+                                                <span class="txtLabel">Ionic</span>
+                                            </div>
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="43"><span>43%</span></div>
+                                                <span class="txtLabel">Symfony</span>
+                                            </div>
+                                            <div class="chart">
+                                                <div class="percentage" data-percent="60"><span>60%</span></div>
+                                                <span class="txtLabel">Spring</span>
+                                            </div>
+                                            
+                                        </div>
+                                    </div><!-- ./Tools -->
+                                </div><!-- ./Skills Tab Content -->
+                            </div><!-- ./g2 -->
+                            <div class="g1">
+                                <div class="main-links sidebar">
+                                    <ul>
+                                        <li>
+                                            <a href="#resume">View My Resume</a>
+                                        </li>
+                                        <li>
+                                            <a href="#projects">My Projects</a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact">Contact Me</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
+                            <div class="break"></div>
+                       </section><!-- content -->
+                    </div><!-- End Skills Tab Section -->
+              
+                    <!-- Experience Tab Data -->
+                    <div id="resume">
+                        <div class="info">
+                            <h3>Professional Experience</h3>
+                            <p>I have worked in every aspect of the software development lifecycle from design to support. In addition to getting down to business in development, I have been the lead engineer on many applications and served as the project manager working directly with customers to translate their needs into solid results.</p>
                         </div>
-                        <div class="break"></div>
-                        <div class="contact-info">
-                          <div class="g1">
-                            <div class="item-box clearfix">
-                              <i class="icon-envelope"></i>
-                              <div class="item-data">
-                                <h3><a href="mailto:sunny@mrova.com">sunny@mrova.com</a></h3>
-                                <p>Email Address</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="g1">
-                            <div class="item-box clearfix">
-                              <i class="icon-facebook"></i>
-                              <div class="item-data">
-                                <h3><a href="http://fb.me/luthra.sunny">luthra.sunny</a></h3>
-                                <p>Facebook Profile</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="g1">
-                            <div class="item-box clearfix">
-                              <i class="icon-twitter"></i>
-                              <div class="item-data">
-                                <h3><a href="http://twitter.com/mRovaSolutions">@mRovaSolutions</a></h3>
-                                <p>Twitter Handle</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </section><!-- content -->
-                </div>
-              <!-- End About Tab Data -->
-              <!-- Resume Tab Data -->
-                <div id="resume">
-                    <section class="clearfix">
-                        <div class="g2">
-                            <h3>
-                                Work Experience
-                            </h3>
-                            <ul class="no-list work">
-                                <li>
-                                    <h5>
-                                        Freelance Web Designer
-                                    </h5><span class="label label-info">2009-2010</span>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
-                                    </p>
-                                </li>
-                                <li>
-                                    <h5>
-                                        Python Programmer
-                                    </h5><span class="label label-info">2010-2011</span>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
-                                    </p>
-                                </li>
-                                <li>
-                                    <h5>
-                                        Social Media Lunatic
-                                    </h5><span class="label label-info">2011-2012</span>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
-                                    </p>
-                                </li>
-                                <li>
-                                    <h5>
-                                        Being Awesome
-                                    </h5><span class="label label-danger">2012-Till Death</span>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
-                                    </p>
-                                </li>
-                            </ul>
-                            <h3>
-                                Education
-                            </h3>
-                            <ul class="no-list work">
-                                <li>
-                                    <h5>
-                                        NoUse School
-                                    </h5><span class="label label-success">2001-2002</span>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
-                                    </p>
-                                </li>
-                                <li>
-                                    <h5>
-                                        Super Useless College
-                                    </h5><span class="label label-warning">2002-2008</span>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="g1">
-                            <div class="sidebar">
-                                <h3>
-                                    Skills
-                                </h3>
-                                <h5>
-                                    Software
-                                </h5>
-                                <div class="meter emerald">
-                                    <span style="width: 33.3%"><span>Photoshop</span></span>
-                                </div>
-                                <div class="meter carrot">
-                                    <span style="width: 90%"><span>Illustrator</span></span>
-                                </div>
-                                <div class="meter wisteria">
-                                    <span style="width: 60%"><span>InDesign</span></span>
-                                </div>
-                                <div class="meter sunflower">
-                                    <span style="width: 40%"><span>Firework</span></span>
-                                </div>
-                                <div class="meter midnight">
-                                    <span style="width: 70%"><span>Dreamweaver</span></span>
-                                </div>
-                                <div class="meter pomengrate">
-                                    <span style="width: 60%"><span>Microsoft Office</span></span>
-                                </div>
-                                <div class="meter asbestos">
-                                    <span style="width: 65%"><span>Linux</span></span>
-                                </div>
-                                <div class="break"></div>
-                                <h5>
-                                    Design
-                                </h5>
-                                <div class="meter emerald">
-                                    <span style="width: 33.3%"><span>User Interface</span></span>
-                                </div>
-                                <div class="meter carrot">
-                                    <span style="width: 90%"><span>Typography</span></span>
-                                </div>
-                                <div class="meter wisteria">
-                                    <span style="width: 60%"><span>Web Applications</span></span>
-                                </div>
-                                <div class="break"></div>
-                                <h5>
-                                    Programming Language
-                                </h5>
-                                <div class="meter emerald">
-                                    <span style="width: 53.3%"><span>HTML/CSS</span></span>
-                                </div>
-                                <div class="meter carrot">
-                                    <span style="width: 80%"><span>PHP/MySql</span></span>
-                                </div>
-                                <div class="meter wisteria">
-                                    <span style="width: 95%"><span>jQuery/JavaScript</span></span>
-                                </div>
-                                <div class="meter sunflower">
-                                    <span style="width: 75%"><span>Ruby</span></span>
-                                </div>
-                                <div class="meter asbestos">
-                                    <span style="width: 82%"><span>Python</span></span>
-                                </div>
-                            </div>
-                        </div>
+                        <a href="data/SchelseaJonesSoftwareEngineer.pdf" class="btn"><i class="icon-download-alt">&nbsp;</i>&nbsp;Download Resume</a>
+                        <section id="cd-timeline" class="clearfix">
+                            
+                            <div class="cd-timeline-block">
+                                <div class="cd-timeline-img cd-picture">
+                                    <img src="images/cd-icon-picture.svg" alt="Picture">
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>Senior Software Engineer Team Lead</h2>
+                                    <em><small>SilkRoute Global, Troy MI</small></em>
+                                    <ul class="tech">
+                                        <li class="skillLabel"><i class="icon-ok"></i>Objective C</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>AngularJS</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>JQuery</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>MongoDB</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>SQLServer</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>SQLite</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>NGINX</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>Ruby on Rails</li>
+                                    </ul>
+                                    <br>
+                                    <p>SilkRoute Global is a SaaS consulting firm specializing in web, mobile and enterprise software solutions.</p>
+                                    <p>As a Senior member of the engineering team, I have built B2B web and mobile applications for a variety of clients spanning many different industries.</p>
+                                    <span class="cd-date">2014 - present</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block">
+                                <div class="cd-timeline-img cd-movie">
+                                    <img src="images/cd-icon-movie.svg" alt="Movie">
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>Software Engineer</h2>
+                                    <em><small>Cambium Learning Group, Ann Arbor MI</small></em>
+                                    <ul class="tech">
+                                        <li class="skillLabel"><i class="icon-ok"></i>PHP</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>Java</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>JavaScript</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>MySQL</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>Apache Web Server</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>Tomcat</li>
+                                    </ul>
+                                    <br>
+                                    <p>Cambium Learning Group is a K-12 educational software solution company.  Their focus is building reading and writing tools for teachers, parents and students.</p>
+                                    <p>My primary focus was back end development and DevOps.  I built many tools, CMS features, and developed internal CI processes used for application deployment.</p>
+                                    <span class="cd-date">2007 - 2014</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block">
+                                <div class="cd-timeline-img cd-picture">
+                                    <img src="images/cd-icon-picture.svg" alt="Picture">
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>Technical Analyst</h2>
+                                    <em><small>ZF North American Operations, Northville MI</small></em>
+                                    <ul class="tech">
+                                        <li class="skillLabel"><i class="icon-ok"></i>RedHat Linux</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>OpenSUSE Linux</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>Bash</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>PHP</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>Perl</li>
+                                    </ul>
+                                    <p>ZF is an automotive driveline and chassis technology corporation.  They have operations all over the globe.</p>
+                                    <p>I supported Linux servers and web applications running on those servers.</p>
+                                    <span class="cd-date">2006 - 2007</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block">
+                                <div class="cd-timeline-img cd-location">
+                                    <img src="images/cd-icon-location.svg" alt="Location">
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>Lead Software Engineer</h2>
+                                    <em><small>CADCorporation, Ann Arbor MI</small></em>
+                                    <ul class="tech">
+                                        <li class="skillLabel"><i class="icon-ok"></i>C++</li>
+                                        <li class="skillLabel"><i class="icon-ok"></i>Perl</li>
+                                    </ul>
+                                    <p>CADCorporation was a small engineering start up company with a mission to develop virual environments for urban development firms through the use of gaming technology.</p>
+                                    <p>As the Lead C++ Software Engineer on a small team of enthusiastic developers, I co-designed,developed and shipped a great video game simulation meant to help prospective University students virtually visit campus.</p>
+                                    <span class="cd-date">2005 - 2006</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+                    </section><!--/.resume section -->
+                    
+                     <!-- Education Section -->
+                    <h3>Education</h3>
+                    <section>
+                        <div class="accordion">
+                            <div class="accordion-section">
+                                <a class="accordion-section-title" href="#accordion-1">University of Michigan, Ann Arbor MI</a>
+                                <div id="accordion-1" class="accordion-section-content">
+                                    <h4>Bachelors of Science</h4>
+                                    <span>Engineering, Performing Arts Technology</span>
+                                    <br><br>
+                                    <p>Completed bachelors degree with a dual concentration in Computer Science &amp; Engineering and Performing Arts Technology.</p>
+                                </div><!--end .accordion-section-content-->
+                            </div><!--end .accordion-section-->
+
+                            <div class="accordion-section">
+                                <a class="accordion-section-title" href="#accordion-2">Washtenaw Community College, Ann Arbor MI</a>
+                                <div id="accordion-2" class="accordion-section-content">
+                                    <h4>Linux&#43; Certification</h4>
+                                    <p>Completed Linux&#43; Certification after pursuing Linux Systems Administration as a hobby.</p>
+                                </div><!--end .accordion-section-content-->
+                            </div><!--end .accordion-section-->
+		              </div><!--end .accordion-->
                     </section>
                 </div>
               <!-- End Resume Tab Data -->
-              <!-- Portfolio Tab Data -->
-                <div id="portfolio">
-                    <section class="clearfix">
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/1" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/1" class="btn">Full View</a>
+              <!-- Projects Tab Data -->
+                <div id="projects">
+                    <section class="image clearfix">
+                         <div class="portfolio-item">
+                             <div class="item-wrap">
+                                 <a href="#modal-01" title="">
+                                    <img alt="" src="images/thumbnails/MLBHackathonThumb.jpg">
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>MLB Hackathon</h5>
+                                            <p>Web Application</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/2" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/2" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/3" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/3" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="break"></div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/4" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/4" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/5" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/5" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/business/2" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/business/2" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    <div class="link-icon"><i class="icon-plus"></i></div>
+                                 </a>
+                             </div>
+                         </div> <!-- MLB Thumbnail end -->
+
+                         <div class="columns portfolio-item">
+                             <div class="item-wrap">
+                                 <a href="#modal-02" title="">
+                                     <img alt="" src="images/thumbnails/QBPassingTrendsThumbnail.jpg">
+                                     <div class="overlay">
+                                         <div class="portfolio-item-meta">
+                                             <h5>QB Passing Trends</h5>
+                                             <p>Web Application</p>
+                                         </div>
+                                     </div>
+                                     <div class="link-icon"><i class="icon-plus"></i></div>
+                                 </a>
+                             </div>
+                         </div> <!-- QB Thumbnail end -->
+
+                         <div class="columns portfolio-item">
+                             <div class="item-wrap">
+                                 <a href="#modal-03" title="">
+                                     <img alt="" src="images/thumbnails/RAZThumbnail.jpg">
+                                     <div class="overlay">
+                                         <div class="portfolio-item-meta">
+                                             <h5>Reading A-Z Search</h5>
+                                             <p>Web Application</p>
+                                         </div>
+                                     </div>
+                                     <div class="link-icon"><i class="icon-plus"></i></div>
+                                 </a>
+                             </div>
+                         </div> <!-- RAZ Thumbnail end -->
+
+                         <div class="columns portfolio-item">
+                             <div class="item-wrap">
+                                 <a href="#modal-04" title="">
+                                     <img alt="" src="images/thumbnails/SAZThumbnail.jpg">
+                                     <div class="overlay">
+                                         <div class="portfolio-item-meta">
+                                             <h5>Science A-Z Features</h5>
+                                             <p>Web Application</p>
+                                         </div>
+                                     </div>
+                                     <div class="link-icon"><i class="icon-plus"></i></div>
+                                 </a>
+                             </div>
+                         </div> <!-- SAZ Thumbnail end -->
+
+                         <div class="columns portfolio-item">
+                             <div class="item-wrap">
+                                 <a href="#modal-05" title="">
+                                     <img alt="" src="images/thumbnails/BlockGuideThumb.jpg">
+                                     <div class="overlay">
+                                         <div class="portfolio-item-meta">
+                                             <h5>Block Guide Free</h5>
+                                             <p>Mobile App</p>
+                                         </div>
+                                     </div>
+                                     <div class="link-icon"><i class="icon-plus"></i></div>
+                                 </a>
+                             </div>
+                         </div> <!-- Blk Guide Thumbnail end -->
+
+                         <div class="columns portfolio-item">
+                             <div class="item-wrap">
+                                 <a href="#modal-06" title="">
+                                     <img alt="" src="images/thumbnails/PocketLGFreeThumbnail.jpg">
+                                     <div class="overlay">
+                                         <div class="portfolio-item-meta">
+                                             <h5>Pocket Lift Guide</h5>
+                                             <p>Mobile App</p>
+                                         </div>
+                                     </div>
+                                     <div class="link-icon"><i class="icon-plus"></i></div>
+                                 </a>
+                             </div>
+                         </div> <!-- PLG Free Thumbnail end -->
+
+                         <div class="columns portfolio-item">
+                             <div class="item-wrap">
+                                 <a href="#modal-07" title="">
+                                     <img alt="" src="images/thumbnails/EntertainmentThumbnail.png">
+                                     <div class="overlay">
+                                         <div class="portfolio-item-meta">
+                                             <h5>Entertainment</h5>
+                                             <p>Mobile App</p>
+                                         </div>
+                                     </div>
+                                     <div class="link-icon"><i class="icon-plus"></i></div>
+                                 </a>
+                             </div>
+                         </div> <!-- Entertainment Thumbnail end -->
+                     
+                         <div class="columns portfolio-item">
+                             <div class="item-wrap">
+                                 <a href="#modal-08" title="">
+                                     <img alt="" src="images/thumbnails/CatalogThumbnail.jpg">
+                                     <div class="overlay">
+                                         <div class="portfolio-item-meta">
+                                             <h5>Crosby Catalog</h5>
+                                             <p>Mobile App</p>
+                                         </div>
+                                     </div>
+                                     <div class="link-icon"><i class="icon-plus"></i></div>
+                                 </a>
+                             </div>
+                         </div> <!-- Catalog Thumbnail end -->
                         
+                         <div class="columns portfolio-item">
+                             <div class="item-wrap">
+                                 <a href="#modal-09" title="">
+                                     <img alt="" src="images/thumbnails/movieTrailerThumb.jpg">
+                                     <div class="overlay">
+                                         <div class="portfolio-item-meta">
+                                             <h5>Movie Trailers</h5>
+                                             <p>Web Application</p>
+                                         </div>
+                                     </div>
+                                     <div class="link-icon"><i class="icon-plus"></i></div>
+                                 </a>
+                             </div>
+                         </div> <!-- Catalog Thumbnail end -->
+                        
+                         <!-- Modal pop up section -->
+                         <div id="modal-01" class="popup-modal mfp-hide">
+                             <img class="scale-with-grid" src="images/previews/MLBHackathonPreview.jpg" alt="" />
+                             <div class="description-box">
+                                 <h4>MLB Hackathon</h4>
+                                 <p>Baseball Pitching Analysis Hackathon project hosted by TruMedia Networks.</p>
+                                 <span class="categories"><i class="icon-tag"></i>Stats &amp; Analytics, D3.js, JavaScript</span>
+                             </div>
+                             <div class="link-box">
+                                 <a href="http://www.capoeiradetroit.org/projects/mlb-mvp/" class="btn" target="_blank">View</a>
+                                 <a class="popup-modal-dismiss btn btn-close">Close</a>
+                             </div>
+                         </div><!-- MLB Modal End -->
+
+                         <div id="modal-02" class="popup-modal mfp-hide">
+                             <img class="scale-with-grid" src="images/previews/QBPassingTrendsPreview.jpg" alt="" />
+                             <div class="description-box">
+                                 <h4>Quarterback Passing Trends Project</h4>
+                                 <p>Single page responsive web application of a dashboard displaying quarterback stats based on provided data in JSON format.</p>
+                                 <span class="categories"><i class="icon-tag"></i>Stats &amp; Analytics, Responsive SPA, JavaScript, D3.js, AngularJS</span>
+                             </div>
+                             <div class="link-box">
+                                 <a href="http://www.capoeiradetroit.org/projects/qb-passing" class="btn" target="_blank">View</a>
+                                 <a class="popup-modal-dismiss btn btn-close">Close</a>
+                             </div>
+                         </div><!-- QB Modal End -->
+
+                         <div id="modal-03" class="popup-modal mfp-hide">
+                             <img class="scale-with-grid" src="images/previews/RAZSearchPreview.jpg" alt="" />
+                             <div class="description-box">
+                                 <h4>Reading A-Z Search</h4>
+                                 <strong><em>My Contributions:</em></strong><p>Designed Java Lucene based Search Engine API,   Built User Interface functionality.</p>
+                                 <span class="categories"><i class="icon-tag"></i>Java, Lucene, PHP, MySQL, JavaScript</span>
+                             </div>
+                             <div class="link-box">
+                                 <a href="https://www.readinga-z.com/search/" class="btn" target="_blank">View</a>
+                                 <a class="popup-modal-dismiss btn btn-close">Close</a>
+                             </div>
+                         </div><!-- RAZ Modal End -->
+
+                         <div id="modal-04" class="popup-modal mfp-hide">
+                             <img class="scale-with-grid" src="images/previews/SAZPreview.jpg" alt="" />
+                             <div class="description-box">
+                                 <h4>Science A-Z Features</h4>
+                                 <strong><em>My Contributions:</em></strong><p>Developed content management system in PHP, Collaborated with content team for new features, Built User Interface functionality for multiple Correlations and Resource Types.</p>
+                                 <span class="categories"><i class="icon-tag"></i>Java, JSP, PHP, MySQL, JavaScript, AJAX</span>
+                             </div>
+                             <div class="link-box">
+                                 <a href="http://www.sciencea-z.com" class="btn" target="_blank">View</a>
+                                 <a class="popup-modal-dismiss btn btn-close">Close</a>
+                             </div>
+                         </div><!-- SAZ Modal End -->
+
+                         <div id="modal-05" class="popup-modal mfp-hide">
+                             <img class="scale-with-grid" src="images/previews/BlockGuidePreview.jpg" alt="" />
+                             <div class="description-box">
+                                 <h4>Block Selection and Application Guide</h4>
+                                 <strong><em>My Contributions:</em></strong><p>Updated app to iOS 8 compliance. Integrated various features and enhancements.</p>
+                                 <span class="categories"><i class="icon-tag"></i>iOS, Objective C</span>
+                             </div>
+                             <div class="link-box">
+                                 <a href="https://geo.itunes.apple.com/us/app/block-selection-application/id460768449?mt=8" class="btn" target="_blank">View</a>
+                                 <a class="popup-modal-dismiss btn btn-close">Close</a>
+                             </div>
+                         </div><!-- Blk Guide Modal End -->
+
+                         <div id="modal-06" class="popup-modal mfp-hide">
+                             <img class="scale-with-grid" src="images/previews/PLGFPreview.jpg" alt="" />
+                             <div class="description-box">
+                                 <h4>Pocket Lift Guide Free</h4>
+                                 <p>Collaborated with the client, designed and crafted a new free app used for marketing promotions.</p>
+                                 <span class="categories"><i class="icon-tag"></i> Xcode, JQuery, Cordova</span>
+                             </div>
+                             <div class="link-box">
+                                 <a href="https://geo.itunes.apple.com/us/app/pocket-lift-guide-free/id998619022?mt=8" class="btn" target="_blank">View</a>
+                                 <a class="popup-modal-dismiss btn btn-close">Close</a>
+                             </div>
+                         </div><!-- Pocket LG Free Modal End -->
+
+                         <div id="modal-07" class="popup-modal mfp-hide">
+                             <img class="scale-with-grid" src="images/previews/EntPreview.jpg" alt="" />
+                             <div class="description-box">
+                                 <h4>Entertainment Coupon</h4>
+                                 <strong><em>My Contributions:</em></strong><p>Integrated Geolocation notifications using Plot Projects. Multiple feature additions and enhancements.</p>
+                                 <span class="categories"><i class="icon-tag"></i>JavaScript, Kendo MobileUI, Phonegap, Cordova</span>
+                             </div>
+                             <div class="link-box">
+                                 <a href="https://geo.itunes.apple.com/us/app/entertainment-membership-coupons/id396932969?mt=8" class="btn" target="_blank">View</a>
+                                 <a class="popup-modal-dismiss btn btn-close">Close</a>
+                             </div>
+                         </div><!-- Entertainment Modal End -->
+
+                         <div id="modal-08" class="popup-modal mfp-hide">
+                             <img class="scale-with-grid" src="images/previews/CatalogPreview.jpg" alt="" />
+                             <div class="description-box">
+                                 <h4>Crosby Catalog</h4>
+                                 <strong><em>My Contributions:</em></strong><p>Updated app to iOS 8 compliance.  Integrated various features and enhancements.</p>
+                                 <span class="categories"><i class="icon-tag"></i>JavaScript, HTML, CSS, JQuery Mobile, Cordova</span>
+                             </div>
+                             <div class="link-box">
+                                 <a href="https://geo.itunes.apple.com/us/app/crosby-catalog/id822360235?mt=8" class="btn" target="_blank">View</a>
+                                 <a class="popup-modal-dismiss btn btn-close">Close</a>
+                             </div>
+                         </div><!--Catalog Modal End -->
+                         <div id="modal-09" class="popup-modal mfp-hide">
+                             <img class="scale-with-grid" src="images/previews/movieTrailerPreview.jpg" alt="" />
+                             <div class="description-box">
+                                 <h4>Movie Trailers</h4>
+                                 <strong><em>My Contributions:</em></strong><p>Simple bootstrap application using Youtube Iframe API and OMDB API to display a few different movie trailers and stats.</p>
+                                 <span class="categories"><i class="icon-tag"></i>Responsive SPA, JavaScript, Bootstrap, HTML5, CSS3</span>
+                             </div>
+                             <div class="link-box">
+                                 <a href="http://www.capoeiradetroit.org/projects/movie-trailers" class="btn" target="_blank">View</a>
+                                 <a class="popup-modal-dismiss btn btn-close">Close</a>
+                             </div>
+                         </div><!--Catalog Modal End -->
                     </section>
                 </div>
-              <!-- End Portfolio Data -->
-              <!-- Contact Tab Data -->
+                <!-- End Projects Data -->
+                <!-- Contact Tab Data -->
                 <div id="contact">
+                    <header class="contact-header">Get In Touch</header>
                     <section class="clearfix">
-                       <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="icon-globe"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>My Address</h4>
-                              <p>Some Apartment 405 in a jungle nearby a restaurant</p>
-                            </div>
-                         </div>
-                       </div>
-                       <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="icon-phone"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>Mobile Number</h4>
-                              <p>999-9999-999<br/>999-1112-999</p>
-                            </div>
-                         </div>
-                       </div>
-                       <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="icon-user"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>About Me</h4>
-                              <p>I love to work, so don't be shy, i am just an email away.</p>
-                            </div>
-                         </div>
-                       </div>
+                        <div id="form-messages"></div>
+                        <form id="ajax-contact" method="post" action="scripts/contact.php">
+                            <fieldset>
+                                <input name="name" placeholder="Name" required>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <input name="email" type="email" placeholder="Email" required>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <textarea name="message" placeholder="Message" required></textarea>
+                            </fieldset>
+
+                            <fieldset>
+                                <label>What is 7 &#43; 2? (Anti-spam)</label>
+                                <input name="human" placeholder="Answer" required>
+                            </fieldset>
+                            <input id="submit" class="btn" name="submit" type="submit" value="SEND MESSAGE">
+
+                        </form>
+                       <div class="break"></div>
+                       
+                    </section>
+                </div>
+                <div id="contactthankyou">
+                    <section class="clearfix">
+                        <p class="success"><i class="icon-thumbs-up-alt"></i>Thank you for contacting me!</p>
+                        
                        <div class="break"></div>
                        
                     </section>
@@ -383,7 +706,7 @@
         <!-- End Tab Container -->
         <footer>
             <p>
-                Designed with lots of love at <a href="http://www.mrova.com" title="Pune web designing company">mRova</a>. Just <a href="http://www.mrova.com/free-one-page-responsive-html-resume-template/">Click me to download</a> this template for free :).
+               <em>Credits</em>&nbsp;&nbsp;Profile image taken by <strong>Chloe Parfitt</strong>. &nbsp;&nbsp; Web template designed by <a href="http://www.mrova.com" title="Pune web designing company">mRova</a>.
             </p>
         </footer>
     </div><!-- #main -->
@@ -391,5 +714,11 @@
 
 
 
+      <script src="js/jquery.hashchange.min.js"></script>
+      <script src="js/jquery.easytabs.min.js"></script>
+      <script src="http://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="scripts/main.js"></script>
+      <script src="scripts/mailer.js"></script>
 </body>
 </html>

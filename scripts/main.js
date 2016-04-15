@@ -15,7 +15,98 @@ $(document).ready( function() {
 	// Hide logo
 	$('#tab-about').click(function() {
 	  $logo.slideUp('slow');
-	});	
+	});
+    
+    //show database skills by default
+    $('#tab-skills').click(function() {
+        $('.skillnav-tabs li.active').removeClass('active');
+        $('#dbli').addClass('active');
+        $('#database').show();
+    });
+    
+    $('.skillnav-tabs').on('click', 'li', function(event) {
+        $('.skillnav-tabs li.active').removeClass('active');
+        $(this).addClass('active');
+        if(event.currentTarget.id != 'dbli') {
+            $('#database').hide();
+        } else {
+             $('#database').show();
+        }
+    });
+    
+    $('.etabs').on('click', 'li', function() {
+        $('#contactthankyou').hide();
+        $('#form-messages').removeClass('success');
+        $('#form-messages').removeClass('error');
+        $('#form-messages').empty();
+        
+    });
+    
+    	// Easy Pie chart 
+	//*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    //Initialize Bar color
+	var barChangeColor = "skyblue";
+	var trackChangeColor = "#eeeeee";
+	var initPieChart = function() {    
+		$('.percentage').easyPieChart({
+			barColor: barChangeColor,
+			trackColor: trackChangeColor,
+			scaleColor: false,
+			lineCap: 'butt',
+			lineWidth: 25,
+			animate: 1000,
+			size:130
+		});
+	}
+
+	initPieChart();
+    
+    // Education Accordion
+    	function close_accordion_section() {
+		$('.accordion .accordion-section-title').removeClass('active');
+		$('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+	}
+
+	$('.accordion-section-title').click(function(e) {
+		// Grab current anchor value
+		var currentAttrValue = $(this).attr('href');
+
+		if($(e.target).is('.active')) {
+			close_accordion_section();
+		} else {
+			close_accordion_section();
+
+			// Add active class to section title
+			$(this).addClass('active');
+			// Open up the hidden content panel
+			$('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+		}
+
+		e.preventDefault();
+	});
+    
+    
+/*----------------------------------------------------*/
+/*	Modal Popup
+------------------------------------------------------*/
+
+    $('.item-wrap a').magnificPopup({
+
+       type:'inline',
+       fixedContentPos: false,
+       removalDelay: 200,
+       showCloseBtn: false,
+       mainClass: 'mfp-fade'
+
+    });
+
+    $(document).on('click', '.popup-modal-dismiss', function (e) {
+        //dismiss the popup by clicking outside the window
+    		e.preventDefault();
+    		$.magnificPopup.close();
+    });
+
+    
 function animMeter(){
     $(".meter > span").each(function() {
                 $(this)
@@ -39,4 +130,10 @@ animMeter();
                     animMeter();
             }
         });
-    });
+    
+    
+    
+    
+    
+    }); //end document ready
+
